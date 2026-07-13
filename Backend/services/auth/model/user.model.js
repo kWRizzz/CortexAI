@@ -17,7 +17,13 @@ const userSchema= new mongoose.Schema({
     password:{
         type:String,
         required:true
+    },
+    avtar:{
+        type:String,
+        default:""
     }
 },{
     timestamps:true
 })
+
+export default mongoose.model("User",userSchema)
